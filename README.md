@@ -1,1 +1,1 @@
-# CarND-Traffic-Signs
+# CarND-Traffic-Sign
