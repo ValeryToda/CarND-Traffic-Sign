@@ -31,7 +31,7 @@ signs data set:
 * The size of training set is 34799
 * The size of the validation set is 4410
 * The size of test set is 12630
-* The shape of a traffic sign image is 32x32 pixels
+* The shape of a traffic sign image is 32x32x3 (width x height x number of color channels)
 * The number of unique classes/labels in the data set is 43
 
 ####2. Include an exploratory visualization of the dataset.
@@ -107,5 +107,11 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 
-The top five soft max probabilities were:
+I implemented a custom method (The code in the cell [Solution 1]) to achieve the goal intended with the call: op5_prob = sess.run(tf.nn.top_k(tf.nn.softmax(logits), k=5), feed_dict = {x: sample_images}). 
+The goal of the function tf.nn.top_k is to return the values and indices (class ids) of the top k predictions. Since the implemented model returns softmax values of the prediction I just need to select the top 5 higher values within the output of the network (the result array of the prediction for a given sample). An alternative way to find the top 5 probabilities is to use the built-In TensorFlow function tf.nn.top_k and apply it to the value of the model output for each prediction or all at one. That is what I proposed as alternative solution in the cell [Alternative to solution 1]. The result provides the evidence that the two methods return the same result. We can that the model predicts the five downloaded images by far very well. The probabilities of all higher predictions are very close to 1. 
+
+#### Output Solution 1: (the probabilities are shown in ascending order)
 ![alt New traffic signs](images/top5.png)
+
+#### Output alternative to Solution 1 (the probabilities are shown in descending order)
+![alt New traffic signs](images/topk5.png)
