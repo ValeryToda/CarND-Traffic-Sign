@@ -11769,52 +11769,6 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
-
- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-<style>  /* defined here in case the main.css below cannot be loaded */
-.lev1 {margin-left: 80px}
-.lev2 {margin-left: 100px}
-.lev3 {margin-left: 120px}
-.lev4 {margin-left: 140px}
-.lev5 {margin-left: 160px}
-.lev6 {margin-left: 180px}
-</style>
-
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css">
-
-<script src="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
-
-<script>
-$( document ).ready(function(){
-
-            var cfg={'threshold':4,     // depth of toc (number of levels)
-             'number_sections': true,  // sections numbering
-             'toc_cell': false,          // useless here
-             'toc_window_display': true, // display the toc window
-             "toc_section_display": "block", // display toc contents in the window
-             'sideBar':true,             // sidebar or floating window
-             'navigate_menu':false       // navigation menu (only in liveNotebook -- do not change)
-            }
-
-            var st={};                  // some variables used in the script
-            st.rendering_toc_cell = false;
-            st.config_loaded = false;
-            st.extension_initialized=false;
-            st.nbcontainer_marginleft = $('#notebook-container').css('margin-left')
-            st.nbcontainer_marginright = $('#notebook-container').css('margin-right')
-            st.nbcontainer_width = $('#notebook-container').css('width')
-            st.oldTocHeight = undefined
-            st.cell_toc = undefined;
-            st.toc_index=0;
-
-            // fire the main function with these parameters
-            table_of_contents(cfg,st);
-    });
-</script>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -11924,7 +11878,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load pickled data</span>
@@ -11983,7 +11937,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Replace each question mark with the appropriate value. </span>
@@ -12062,7 +12016,7 @@ Number of classes = 43
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Data exploration visualization code goes here.</span>
@@ -12636,7 +12590,7 @@ CDMzK+QEYWZmhZwgzMyskBOEmZkV+h+Yo/cUzj4aJQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_train_grped</span> <span class="o">=</span> <span class="p">{}</span>
@@ -12897,7 +12851,7 @@ EGQQChIEGYSCBEEGoSBBkEEoSBBk8P8BhghGuhtaApcAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rotation_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">22</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
@@ -13024,7 +12978,7 @@ EGQQChIEGYSCBEEGoSBBkEEoSBBk8P8BhghGuhtaApcAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">AUGMENT_DATA</span> <span class="o">=</span> <span class="kc">False</span>
@@ -13587,7 +13541,7 @@ CDMzK+QEYWZmhZwgzMyskBOEmZkV+h+Yo/cUzj4aJQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Preprocess the data here. It is required to normalize the data. Other preprocessing steps could include </span>
@@ -13644,7 +13598,7 @@ CDMzK+QEYWZmhZwgzMyskBOEmZkV+h+Yo/cUzj4aJQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Converts a class vector (integers) to binary class matrix.</span>
@@ -13657,7 +13611,7 @@ CDMzK+QEYWZmhZwgzMyskBOEmZkV+h+Yo/cUzj4aJQAAAABJRU5ErkJggg==
 
 <span class="n">BATCH_SIZE_KE</span> <span class="o">=</span> <span class="mi">64</span>
 <span class="n">EPOCHS_KE</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1">#150</span>
-<span class="n">SKIP_TRAINING</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">SKIP_TRAINING</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="n">learning_rate_ke</span> <span class="o">=</span> <span class="mf">0.01</span>
 
 
@@ -13780,7 +13734,7 @@ CDMzK+QEYWZmhZwgzMyskBOEmZkV+h+Yo/cUzj4aJQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">SKIP_TRAINING</span><span class="p">:</span>
@@ -13846,159 +13800,6 @@ CDMzK+QEYWZmhZwgzMyskBOEmZkV+h+Yo/cUzj4aJQAAAABJRU5ErkJggg==
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-conv2d_1 (Conv2D)            (None, 30, 30, 32)        896       
-_________________________________________________________________
-conv2d_2 (Conv2D)            (None, 28, 28, 32)        9248      
-_________________________________________________________________
-bn_1 (BatchNormalization)    (None, 28, 28, 32)        128       
-_________________________________________________________________
-maxpool2d_1 (MaxPooling2D)   (None, 14, 14, 32)        0         
-_________________________________________________________________
-dp_1 (Dropout)               (None, 14, 14, 32)        0         
-_________________________________________________________________
-conv2d_3 (Conv2D)            (None, 12, 12, 64)        18496     
-_________________________________________________________________
-conv2d_4 (Conv2D)            (None, 10, 10, 64)        36928     
-_________________________________________________________________
-bn_2 (BatchNormalization)    (None, 10, 10, 64)        256       
-_________________________________________________________________
-maxpool2d_2 (MaxPooling2D)   (None, 5, 5, 64)          0         
-_________________________________________________________________
-dp_2 (Dropout)               (None, 5, 5, 64)          0         
-_________________________________________________________________
-fc_1 (Dense)                 (None, 5, 5, 128)         8320      
-_________________________________________________________________
-fc_2 (Dense)                 (None, 5, 5, 128)         16512     
-_________________________________________________________________
-bn_3 (BatchNormalization)    (None, 5, 5, 128)         512       
-_________________________________________________________________
-maxpool2d_3 (MaxPooling2D)   (None, 2, 2, 128)         0         
-_________________________________________________________________
-dp_3 (Dropout)               (None, 2, 2, 128)         0         
-_________________________________________________________________
-fln_1 (Flatten)              (None, 512)               0         
-_________________________________________________________________
-fc_3 (Dense)                 (None, 512)               262656    
-_________________________________________________________________
-dp_4 (Dropout)               (None, 512)               0         
-_________________________________________________________________
-fc_4 (Dense)                 (None, 43)                22059     
-=================================================================
-Total params: 376,011
-Trainable params: 375,563
-Non-trainable params: 448
-_________________________________________________________________
-Model saved.
-Train on 34799 samples, validate on 4410 samples
-Epoch 1/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 2.1269 - acc: 0.4188Epoch 00000: val_acc improved from -inf to 0.80068, saving model to ./weights/w-improvement-00-0.80.hdf5
-34799/34799 [==============================] - 161s - loss: 2.1250 - acc: 0.4193 - val_loss: 0.6769 - val_acc: 0.8007
-Epoch 2/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.4367 - acc: 0.8633Epoch 00001: val_acc improved from 0.80068 to 0.91950, saving model to ./weights/w-improvement-01-0.92.hdf5
-34799/34799 [==============================] - 153s - loss: 0.4366 - acc: 0.8633 - val_loss: 0.2656 - val_acc: 0.9195
-Epoch 3/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.2164 - acc: 0.9328Epoch 00002: val_acc improved from 0.91950 to 0.95351, saving model to ./weights/w-improvement-02-0.95.hdf5
-34799/34799 [==============================] - 165s - loss: 0.2166 - acc: 0.9328 - val_loss: 0.1525 - val_acc: 0.9535
-Epoch 4/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.1443 - acc: 0.9544Epoch 00003: val_acc improved from 0.95351 to 0.96190, saving model to ./weights/w-improvement-03-0.96.hdf5
-34799/34799 [==============================] - 161s - loss: 0.1443 - acc: 0.9544 - val_loss: 0.1523 - val_acc: 0.9619
-Epoch 5/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.1051 - acc: 0.9668Epoch 00004: val_acc improved from 0.96190 to 0.96803, saving model to ./weights/w-improvement-04-0.97.hdf5
-34799/34799 [==============================] - 152s - loss: 0.1050 - acc: 0.9668 - val_loss: 0.1182 - val_acc: 0.9680
-Epoch 6/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0838 - acc: 0.9743Epoch 00005: val_acc did not improve
-34799/34799 [==============================] - 159s - loss: 0.0841 - acc: 0.9742 - val_loss: 0.1254 - val_acc: 0.9639
-Epoch 7/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0692 - acc: 0.9783Epoch 00006: val_acc did not improve
-34799/34799 [==============================] - 160s - loss: 0.0692 - acc: 0.9783 - val_loss: 0.1173 - val_acc: 0.9635
-Epoch 8/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0628 - acc: 0.9801Epoch 00007: val_acc improved from 0.96803 to 0.96939, saving model to ./weights/w-improvement-07-0.97.hdf5
-34799/34799 [==============================] - 157s - loss: 0.0628 - acc: 0.9802 - val_loss: 0.1226 - val_acc: 0.9694
-Epoch 9/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0535 - acc: 0.9830Epoch 00008: val_acc improved from 0.96939 to 0.97891, saving model to ./weights/w-improvement-08-0.98.hdf5
-34799/34799 [==============================] - 161s - loss: 0.0537 - acc: 0.9830 - val_loss: 0.0991 - val_acc: 0.9789
-Epoch 10/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0433 - acc: 0.9863Epoch 00009: val_acc did not improve
-34799/34799 [==============================] - 151s - loss: 0.0433 - acc: 0.9863 - val_loss: 0.1095 - val_acc: 0.9707
-Epoch 11/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0317 - acc: 0.9899Epoch 00010: val_acc improved from 0.97891 to 0.98050, saving model to ./weights/w-improvement-10-0.98.hdf5
-34799/34799 [==============================] - 150s - loss: 0.0317 - acc: 0.9899 - val_loss: 0.0759 - val_acc: 0.9805
-Epoch 12/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0268 - acc: 0.9916Epoch 00011: val_acc did not improve
-34799/34799 [==============================] - 156s - loss: 0.0268 - acc: 0.9916 - val_loss: 0.0762 - val_acc: 0.9805
-Epoch 13/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0251 - acc: 0.9921Epoch 00012: val_acc improved from 0.98050 to 0.98163, saving model to ./weights/w-improvement-12-0.98.hdf5
-34799/34799 [==============================] - 166s - loss: 0.0250 - acc: 0.9921 - val_loss: 0.0751 - val_acc: 0.9816
-Epoch 14/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0235 - acc: 0.9925Epoch 00013: val_acc did not improve
-34799/34799 [==============================] - 156s - loss: 0.0235 - acc: 0.9925 - val_loss: 0.0798 - val_acc: 0.9803
-Epoch 15/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0224 - acc: 0.9930Epoch 00014: val_acc improved from 0.98163 to 0.98186, saving model to ./weights/w-improvement-14-0.98.hdf5
-34799/34799 [==============================] - 173s - loss: 0.0224 - acc: 0.9930 - val_loss: 0.0754 - val_acc: 0.9819
-Epoch 16/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0217 - acc: 0.9930Epoch 00015: val_acc did not improve
-34799/34799 [==============================] - 179s - loss: 0.0218 - acc: 0.9930 - val_loss: 0.0742 - val_acc: 0.9807
-Epoch 17/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0197 - acc: 0.9937Epoch 00016: val_acc did not improve
-34799/34799 [==============================] - 167s - loss: 0.0197 - acc: 0.9937 - val_loss: 0.0765 - val_acc: 0.9805
-Epoch 18/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0212 - acc: 0.9932Epoch 00017: val_acc did not improve
-34799/34799 [==============================] - 165s - loss: 0.0212 - acc: 0.9932 - val_loss: 0.0763 - val_acc: 0.9814
-Epoch 19/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0199 - acc: 0.9937Epoch 00018: val_acc did not improve
-34799/34799 [==============================] - 160s - loss: 0.0199 - acc: 0.9937 - val_loss: 0.0730 - val_acc: 0.9812
-Epoch 20/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0206 - acc: 0.9936Epoch 00019: val_acc improved from 0.98186 to 0.98367, saving model to ./weights/w-improvement-19-0.98.hdf5
-34799/34799 [==============================] - 161s - loss: 0.0206 - acc: 0.9936 - val_loss: 0.0729 - val_acc: 0.9837
-Epoch 21/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0207 - acc: 0.9935Epoch 00020: val_acc did not improve
-34799/34799 [==============================] - 158s - loss: 0.0207 - acc: 0.9935 - val_loss: 0.0723 - val_acc: 0.9832
-Epoch 22/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0180 - acc: 0.9948Epoch 00021: val_acc did not improve
-34799/34799 [==============================] - 161s - loss: 0.0180 - acc: 0.9948 - val_loss: 0.0721 - val_acc: 0.9832
-Epoch 23/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0187 - acc: 0.9940Epoch 00022: val_acc did not improve
-34799/34799 [==============================] - 156s - loss: 0.0187 - acc: 0.9940 - val_loss: 0.0725 - val_acc: 0.9832
-Epoch 24/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0182 - acc: 0.9944Epoch 00023: val_acc did not improve
-34799/34799 [==============================] - 156s - loss: 0.0181 - acc: 0.9944 - val_loss: 0.0721 - val_acc: 0.9834
-Epoch 25/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0193 - acc: 0.9938Epoch 00024: val_acc did not improve
-34799/34799 [==============================] - 155s - loss: 0.0193 - acc: 0.9938 - val_loss: 0.0731 - val_acc: 0.9832
-Epoch 26/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0198 - acc: 0.9937Epoch 00025: val_acc did not improve
-34799/34799 [==============================] - 152s - loss: 0.0198 - acc: 0.9937 - val_loss: 0.0727 - val_acc: 0.9828
-Epoch 27/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0192 - acc: 0.9935Epoch 00026: val_acc did not improve
-34799/34799 [==============================] - 162s - loss: 0.0192 - acc: 0.9935 - val_loss: 0.0726 - val_acc: 0.9830
-Epoch 28/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0184 - acc: 0.9946Epoch 00027: val_acc did not improve
-34799/34799 [==============================] - 150s - loss: 0.0184 - acc: 0.9946 - val_loss: 0.0722 - val_acc: 0.9830
-Epoch 29/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0174 - acc: 0.9943Epoch 00028: val_acc did not improve
-34799/34799 [==============================] - 156s - loss: 0.0174 - acc: 0.9943 - val_loss: 0.0724 - val_acc: 0.9828
-Epoch 30/30
-34752/34799 [============================&gt;.] - ETA: 0s - loss: 0.0187 - acc: 0.9944Epoch 00029: val_acc did not improve
-34799/34799 [==============================] - 148s - loss: 0.0187 - acc: 0.9944 - val_loss: 0.0725 - val_acc: 0.9834
-Training history saved.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -14011,7 +13812,7 @@ Training history saved.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Load history form drive</span>
@@ -14585,7 +14386,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">label_desc</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> - </span><span class="si">%2d</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">signnames</span><span class="p">[</span><span class="s1">&#39;SignName&#39;</span><span class="p">][</span><span class="n">label</span><span class="p">],</span> <span class="n">label</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">43</span><span class="p">)]</span>
@@ -14625,7 +14426,8 @@ RU5ErkJggg==
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Weights loaded.
-12608/12630 [============================&gt;.] - ETA: 0s
+12630/12630 [==============================] - 41s    
+
 Model - Test accuracy: 96.84085510688836%
 
 </pre>
@@ -14647,7 +14449,7 @@ Model - Test accuracy: 96.84085510688836%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_confusion_matrix</span><span class="p">(</span><span class="n">conf_mat</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">n_classes</span><span class="o">=</span><span class="mi">43</span><span class="p">):</span>
@@ -15874,7 +15676,7 @@ jSJmZmZmZmZm1ie5UcTMzMzMzMzM+iQ3ipiZmZmZmZlZn/T/AZfD4SX8IdyHAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">target_names</span><span class="o">=</span><span class="n">label_desc</span><span class="p">))</span>
@@ -15971,7 +15773,7 @@ End of no passing by vehicles over 3.5 metric tons - 42       1.00      0.98    
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.ndimage</span> <span class="k">as</span> <span class="nn">skimg</span>
@@ -16014,12 +15816,12 @@ End of no passing by vehicles over 3.5 metric tons - 42       1.00      0.98    
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[14]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x132077c18&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x12205fcf8&gt;</pre>
 </div>
 
 </div>
@@ -16475,7 +16277,7 @@ SmLQAU9RlMSgA56iKInh/wRCQEp7nBonAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load and preprocess X_extra</span>
@@ -16548,7 +16350,7 @@ Predictions:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">_acc</span> <span class="o">=</span> <span class="n">y_pred_extra</span> <span class="o">==</span> <span class="n">y_extra</span>
@@ -16603,19 +16405,19 @@ Model - Accuracy for downloaded signs: 100.0%
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Output-Top-5-Softmax-Probabilities-For-Each-Image-Found-on-the-Web">Output Top 5 Softmax Probabilities For Each Image Found on the Web<a class="anchor-link" href="#Output-Top-5-Softmax-Probabilities-For-Each-Image-Found-on-the-Web">&#182;</a></h3>
+<h3 id="Solution-1:-Output-Top-5-Softmax-Probabilities-For-Each-Image-Found-on-the-Web">Solution 1: Output Top 5 Softmax Probabilities For Each Image Found on the Web<a class="anchor-link" href="#Solution-1:-Output-Top-5-Softmax-Probabilities-For-Each-Image-Found-on-the-Web">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nb_of_largest_prob</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X_extra</span><span class="p">)):</span>
     <span class="c1"># calculate the probabilities </span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> Largest probabilities for value with Target: </span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nb_of_largest_prob</span><span class="p">,</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.png - </span><span class="si">{}</span><span class="s2"> Largest probabilities for value with Target: </span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">nb_of_largest_prob</span><span class="p">,</span>
                                                                        <span class="n">y_extra</span><span class="p">[</span><span class="n">index</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">55</span><span class="o">*</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
     <span class="n">tmp_prob_extra</span> <span class="o">=</span> <span class="n">test_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">X_extra</span><span class="p">[</span><span class="n">index</span><span class="p">]]),</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -16627,7 +16429,7 @@ Model - Accuracy for downloaded signs: 100.0%
     <span class="c1">#sub_index [-nb_of_largest_prob, -1]</span>
     <span class="k">for</span> <span class="n">sub_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="n">nb_of_largest_prob</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span> 
         <span class="n">curr_label</span> <span class="o">=</span> <span class="n">probs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">probs</span><span class="p">)</span><span class="o">+</span><span class="n">sub_index</span><span class="p">]</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tmp_prob_extra</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">curr_label</span><span class="p">],</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Label </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">curr_label</span><span class="p">,</span> <span class="n">tmp_prob_extra</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">curr_label</span><span class="p">],</span>
                                      <span class="n">signnames</span><span class="p">[</span><span class="s2">&quot;SignName&quot;</span><span class="p">][</span><span class="n">curr_label</span><span class="p">]))</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">55</span><span class="o">*</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">()</span>
@@ -16646,50 +16448,182 @@ Model - Accuracy for downloaded signs: 100.0%
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>5 Largest probabilities for value with Target: 23 
+<pre>1.png - 5 Largest probabilities for value with Target: 23 
 -------------------------------------------------------
-2.363632067847732e-10 - Right-of-way at the next intersection
-3.5355518512858453e-10 - Bicycles crossing
-3.2256792792395572e-09 - Beware of ice/snow
-7.216234365614582e-08 - Dangerous curve to the right
-0.9999998807907104 - Slippery road
--------------------------------------------------------
-
-5 Largest probabilities for value with Target: 38 
--------------------------------------------------------
-1.3878065211104683e-15 - Roundabout mandatory
-2.254394706259792e-15 - Dangerous curve to the right
-1.0014019913859654e-13 - Go straight or right
-1.7196929102090974e-13 - Turn left ahead
-1.0 - Keep right
+Label 11: 2.363632067847732e-10 - Right-of-way at the next intersection
+Label 29: 3.5355518512858453e-10 - Bicycles crossing
+Label 30: 3.2256792792395572e-09 - Beware of ice/snow
+Label 20: 7.216234365614582e-08 - Dangerous curve to the right
+Label 23: 0.9999998807907104 - Slippery road
 -------------------------------------------------------
 
-5 Largest probabilities for value with Target: 13 
+2.png - 5 Largest probabilities for value with Target: 38 
 -------------------------------------------------------
-3.8533104549665036e-18 - Speed limit (50km/h)
-8.929087976167975e-18 - Road work
-8.230762085279886e-17 - Speed limit (30km/h)
-1.1977286749170182e-16 - No vehicles
-1.0 - Yield
--------------------------------------------------------
-
-5 Largest probabilities for value with Target: 35 
--------------------------------------------------------
-3.2137541326054953e-12 - No vehicles
-2.006339365479004e-11 - Turn left ahead
-5.655639290225167e-10 - Go straight or right
-2.3549999639271846e-07 - Turn right ahead
-0.9999997615814209 - Ahead only
+Label 40: 1.3878065211104683e-15 - Roundabout mandatory
+Label 20: 2.254394706259792e-15 - Dangerous curve to the right
+Label 36: 1.0014019913859654e-13 - Go straight or right
+Label 34: 1.7196929102090974e-13 - Turn left ahead
+Label 38: 1.0 - Keep right
 -------------------------------------------------------
 
-5 Largest probabilities for value with Target: 31 
+3.png - 5 Largest probabilities for value with Target: 13 
 -------------------------------------------------------
-2.746229768035846e-07 - Bumpy road
-5.724491711589508e-05 - Bicycles crossing
-8.790390711510554e-05 - Dangerous curve to the left
-0.09106744825839996 - Slippery road
-0.9087870717048645 - Wild animals crossing
+Label 2: 3.8533104549665036e-18 - Speed limit (50km/h)
+Label 25: 8.929087976167975e-18 - Road work
+Label 1: 8.230762085279886e-17 - Speed limit (30km/h)
+Label 15: 1.1977286749170182e-16 - No vehicles
+Label 13: 1.0 - Yield
 -------------------------------------------------------
+
+4.png - 5 Largest probabilities for value with Target: 35 
+-------------------------------------------------------
+Label 15: 3.2137541326054953e-12 - No vehicles
+Label 34: 2.006339365479004e-11 - Turn left ahead
+Label 36: 5.655639290225167e-10 - Go straight or right
+Label 33: 2.3549999639271846e-07 - Turn right ahead
+Label 35: 0.9999997615814209 - Ahead only
+-------------------------------------------------------
+
+5.png - 5 Largest probabilities for value with Target: 31 
+-------------------------------------------------------
+Label 22: 2.746229768035846e-07 - Bumpy road
+Label 29: 5.724491711589508e-05 - Bicycles crossing
+Label 19: 8.790390711510554e-05 - Dangerous curve to the left
+Label 23: 0.09106744825839996 - Slippery road
+Label 31: 0.9087870717048645 - Wild animals crossing
+-------------------------------------------------------
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Alternative-to-solution-1-to-find-the-top-5-probabilities-unsing-Keras-and-TensorFlow">Alternative to solution 1 to find the top 5 probabilities unsing Keras and TensorFlow<a class="anchor-link" href="#Alternative-to-solution-1-to-find-the-top-5-probabilities-unsing-Keras-and-TensorFlow">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I implemented a custom method (The code in the cell [Solution 1]) to achieve the goal intended with the call: op5_prob = sess.run(tf.nn.top_k(tf.nn.softmax(logits), k=5), feed_dict = {x: sample_images}). 
+The goal of the function tf.nn.top_k is to return the values and indices (class ids) of the top k predictions. Since the implemented model returns softmax values of the prediction I just need to select the top 5 higher values within the output of the network (the result array of the prediction for a given sample). An alternative way to find the top 5 probabilities is to use the built-In TensorFlow function tf.nn.top_k and apply it to the value of the model output for each prediction or all at one. That is what I proposed as alternative solution in the cell [Alternative to solution 1].</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">backend</span> <span class="k">as</span> <span class="n">K</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Wrapper function</span>
+<span class="k">def</span> <span class="nf">wrapper_top_k</span><span class="p">(</span><span class="n">test_sample</span><span class="p">,</span> <span class="n">top_index</span><span class="p">):</span>
+    <span class="n">softmaxed_predicted_values</span> <span class="o">=</span> <span class="n">test_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_sample</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">top_values</span><span class="p">,</span> <span class="n">top_indices</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">get_session</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">top_k</span><span class="p">(</span><span class="n">softmaxed_predicted_values</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">top_index</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">top_values</span><span class="p">,</span> <span class="n">top_indices</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s run through the X_extra container of downloaded images</span>
+<span class="n">top_index</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X_extra</span><span class="p">)):</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> Largest probabilities for image </span><span class="si">{}</span><span class="s2">.png &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nb_of_largest_prob</span><span class="p">,</span> <span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">81</span><span class="o">*</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+          
+    <span class="c1"># Make the prediction</span>
+    <span class="n">tmp_res</span> <span class="o">=</span> <span class="n">wrapper_top_k</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">X_extra</span><span class="p">[</span><span class="n">index</span><span class="p">]]),</span> <span class="n">top_index</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Top values: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tmp_res</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Top indices: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tmp_res</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">81</span><span class="o">*</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5 Largest probabilities for image 1.png 
+---------------------------------------------------------------------------------
+Top values: [[  9.99999881e-01   7.21623437e-08   3.22567928e-09   3.53555185e-10
+    2.36363207e-10]]
+
+Top indices: [[23 20 30 29 11]]
+---------------------------------------------------------------------------------
+
+5 Largest probabilities for image 2.png 
+---------------------------------------------------------------------------------
+Top values: [[  1.00000000e+00   1.71969291e-13   1.00140199e-13   2.25439471e-15
+    1.38780652e-15]]
+
+Top indices: [[38 34 36 20 40]]
+---------------------------------------------------------------------------------
+
+5 Largest probabilities for image 3.png 
+---------------------------------------------------------------------------------
+Top values: [[  1.00000000e+00   1.19772867e-16   8.23076209e-17   8.92908798e-18
+    3.85331045e-18]]
+
+Top indices: [[13 15  1 25  2]]
+---------------------------------------------------------------------------------
+
+5 Largest probabilities for image 4.png 
+---------------------------------------------------------------------------------
+Top values: [[  9.99999762e-01   2.35499996e-07   5.65563929e-10   2.00633937e-11
+    3.21375413e-12]]
+
+Top indices: [[35 33 36 34 15]]
+---------------------------------------------------------------------------------
+
+5 Largest probabilities for image 5.png 
+---------------------------------------------------------------------------------
+Top values: [[  9.08787072e-01   9.10674483e-02   8.79039071e-05   5.72449171e-05
+    2.74622977e-07]]
+
+Top indices: [[31 23 19 29 22]]
+---------------------------------------------------------------------------------
 
 </pre>
 </div>
